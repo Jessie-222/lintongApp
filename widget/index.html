@@ -46,8 +46,16 @@
 </head>
 
 <body class="wrap">
-   <iframe width="100%" height="100%" src="http://zhangxu.tunnel.funenc.com:7080/mobile"></iframe>
+   <!-- <iframe width="100%" height="100%" src="http://silu.tunnel.funenc.com:7080?plat=app"></iframe> -->
 </body>
 <script type="text/javascript" src="./script/api.js"></script>
-
+<script type="text/javascript">
+window.apiready = () => {
+    api.openWin({
+        name: '222',
+        url: 'http://silu.tunnel.funenc.com:7080/mobile?plat=app',
+    })  
+}
+   
+</script>
 </html>
